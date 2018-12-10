@@ -1,0 +1,90 @@
+fileFormatVersion: 2
+guid: a2ca0f72d21b84bd88a4774bd92b71a9
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: Brick/Brick
+    400000: Brick/Brick/Transform
+    2100000: mat.Brick
+    2300000: Brick/Brick/MeshRenderer
+    2800000: Brick_baseColor
+    2800002: Brick_normal
+    2800004: Brick_metallic
+    2800006: Brick_height
+    2800008: Brick_roughness
+    3300000: Brick/Brick/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: Brick/Brick/SphereCollider
+    100100000: Brick
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Brick
+    prototypeName: Brick
+    graphDescIndex: 0
+    generateAllOutputs: 1
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Brick\" label=\"\" >\n  <presetinput identifier=\"Roughness\"
+      uid=\"549158205\" type=\"3\" value=\"0.509434,0.509434,0.509434,1\" />\n  <presetinput
+      identifier=\"DisorderIntensity\" uid=\"549135726\" type=\"0\" value=\"0.144\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: 
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Brick_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Brick_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Brick_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Brick_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Brick_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 0
+      textureHeight: 0
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: a2ca0f72d21b84bd88a4774bd92b71a9, type: 3}
+    generatedTextures: []
