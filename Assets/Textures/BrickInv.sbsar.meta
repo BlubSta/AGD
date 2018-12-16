@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: a2ca0f72d21b84bd88a4774bd92b71a9
+guid: 1712562df75ec42b8a11c90f3dc5baa9
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: Brick/Brick
-    400000: Brick/Brick/Transform
+    100000: BrickInv/BrickInv
+    400000: BrickInv/BrickInv/Transform
     2100000: mat.Brick
-    2300000: Brick/Brick/MeshRenderer
+    2300000: BrickInv/BrickInv/MeshRenderer
     2800000: Brick_baseColor
     2800002: Brick_normal
     2800004: Brick_metallic
     2800006: Brick_height
-    3300000: Brick/Brick/MeshFilter
+    3300000: BrickInv/BrickInv/MeshFilter
     11400000: sbsar
     11400002: graph0
-    13500000: Brick/Brick/SphereCollider
-    100100000: Brick
+    13500000: BrickInv/BrickInv/SphereCollider
+    100100000: BrickInv
   externalObjects: {}
   userData: 
   assetBundleName: 
