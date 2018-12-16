@@ -212,7 +212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ba5100332d6428887aaa9c55b65907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.3
+  sprintspeed: 0.5
   cameraH: 2
   cameraV: 3
   camera: {fileID: 1334953105515788}
@@ -227,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f67275377734067bd79e93d7fe0148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 1844839730902942, guid: 3f22714de83a0402e830a5e054046455, type: 2}
+  test: {fileID: 1701078913574538, guid: ad600d1b66dc9493fb3463e26110854f, type: 2}
   camera: {fileID: 1334953105515788}
 --- !u!114 &114411989263868932
 MonoBehaviour:

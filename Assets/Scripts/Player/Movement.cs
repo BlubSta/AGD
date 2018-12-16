@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-	public float speed = 1f;
+	public float speed = 0.3f;
+    public float sprintspeed = 0.5f;
 	public float cameraH = 2f;
 	public float cameraV = 3f;
 	public GameObject camera;
@@ -13,6 +14,7 @@ public class Movement : MonoBehaviour {
 	private float vertical;
 	private float mouseHorizontal;
 	private float mouseVertical;
+    private float privateSpeed;
 	private Rigidbody rb;
     private Vector3 movement;
 
@@ -25,9 +27,20 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (!PlayerControler.pause) {
-			horizontal = Input.GetAxisRaw ("Horizontal") * speed; //ad
-			vertical = Input.GetAxisRaw ("Vertical") * speed; //ws
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            privateSpeed = sprintspeed;
+            print("sprinting");
+        }
+        else
+        {
+            privateSpeed = speed;
+        }
+
+        if (!PlayerControler.pause) {
+			horizontal = Input.GetAxisRaw ("Horizontal") * privateSpeed; //ad
+			vertical = Input.GetAxisRaw ("Vertical") * privateSpeed; //ws
 
 			mouseHorizontal = Input.GetAxis ("Mouse X") * cameraH;
 			mouseVertical = Input.GetAxis ("Mouse Y") * cameraV;
