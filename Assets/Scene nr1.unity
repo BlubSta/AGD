@@ -455,25 +455,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4821475863317674, guid: a48c81133743b4b8180da8437ef4b654, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.0000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821475863317674, guid: a48c81133743b4b8180da8437ef4b654, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821475863317674, guid: a48c81133743b4b8180da8437ef4b654, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000001
-      objectReference: {fileID: 0}
     - target: {fileID: 1350914000288608, guid: a48c81133743b4b8180da8437ef4b654, type: 2}
       propertyPath: m_Name
       value: StreetLantern (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821475863317674, guid: a48c81133743b4b8180da8437ef4b654, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 82.649
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a48c81133743b4b8180da8437ef4b654, type: 2}

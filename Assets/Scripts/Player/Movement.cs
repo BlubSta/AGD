@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
+    public TerrainDetector td;
+
 	public float speed = 0.3f;
     public float sprintspeed = 0.5f;
 	public float cameraH = 2f;
@@ -23,6 +25,7 @@ public class Movement : MonoBehaviour {
         rb = gameObject.GetComponent<Rigidbody>();
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
+        td = new TerrainDetector();
 	}
 	
 	// Update is called once per frame
@@ -52,5 +55,27 @@ public class Movement : MonoBehaviour {
             transform.Rotate(0, mouseHorizontal, 0);
 		}
 
+        print(playSounds());
 	}
+
+    string playSounds()
+    {
+        switch (td.GetActiveTerrainTextureIdx(transform.position))
+        {
+            case 0:
+                return "grass";
+            case 1:
+                return "lowGrass";
+            case 2:
+                return "Dirt";
+            case 3:
+                return "MossyRocks";
+            case 4:
+                return "Rocks";
+            case 5:
+                return "FloweredGras";
+            default:
+                return "none";
+        }
+    }
 }
