@@ -55,7 +55,7 @@ public class Movement : MonoBehaviour {
             transform.Rotate(0, mouseHorizontal, 0);
 		}
 
-        print(playSounds());
+        //print(playSounds());
 	}
 
     string playSounds()
