@@ -49,7 +49,6 @@ public class CollectableSpawner : MonoBehaviour {
             {
                 if (col.gameObject != terrain.gameObject)
                 {
-                    print(col.gameObject + " " + terrain.gameObject);
                     return;
                 }
             }

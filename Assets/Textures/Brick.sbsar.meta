@@ -8,8 +8,7 @@ ScriptedImporter:
     2300000: Brick/Brick/MeshRenderer
     2800000: Brick_baseColor
     2800002: Brick_normal
-    2800004: Brick_metallic
-    2800006: Brick_height
+    2800004: Brick_height
     3300000: Brick/Brick/MeshFilter
     11400000: sbsar
     11400002: graph0
@@ -27,9 +26,10 @@ ScriptedImporter:
     graphDescIndex: 0
     generateAllOutputs: 0
     generateMipMaps: 1
-    preset: " <sbspreset pkgurl=\"pkg://Brick\" label=\"\" >\n </sbspreset>\n"
+    preset: " <sbspreset pkgurl=\"pkg://Brick\" label=\"\" >\n  <presetinput identifier=\"DisorderIntensity\"
+      uid=\"549135726\" type=\"0\" value=\"0.681\" />\n </sbspreset>\n"
     shaderName: Standard
-    outputNames: baseColor,normal,metallic,height
+    outputNames: baseColor,normal,height
     texturePackingList:
     - outputName: baseColor
       alphaSource: baseColor
@@ -37,15 +37,9 @@ ScriptedImporter:
       alphaSource: normal
     - outputName: roughness
       alphaSource: roughness
-    - outputName: metallic
-      alphaSource: smoothness
     - outputName: height
       alphaSource: height
     textureParameters:
-    - textureName: Brick_roughness
-      wrapMode: 0
-      filterMode: 1
-      aniso: 1
     - textureName: Brick_baseColor
       wrapMode: 0
       filterMode: 1
@@ -54,7 +48,7 @@ ScriptedImporter:
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Brick_metallic
+    - textureName: Brick_roughness
       wrapMode: 0
       filterMode: 1
       aniso: 1
@@ -69,8 +63,6 @@ ScriptedImporter:
       bLinear: 1
     - outputName: roughness
       bLinear: 1
-    - outputName: metallic
-      bLinear: 1
     - outputName: height
       bLinear: 1
     inputTextureMap: []
@@ -82,5 +74,8 @@ ScriptedImporter:
       textureHeight: 0
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {instanceID: 0}
-    generatedTextures: []
+    material: {fileID: 2100000, guid: a2ca0f72d21b84bd88a4774bd92b71a9, type: 3}
+    generatedTextures:
+    - {fileID: 2800000, guid: a2ca0f72d21b84bd88a4774bd92b71a9, type: 3}
+    - {fileID: 2800002, guid: a2ca0f72d21b84bd88a4774bd92b71a9, type: 3}
+    - {fileID: 2800004, guid: a2ca0f72d21b84bd88a4774bd92b71a9, type: 3}

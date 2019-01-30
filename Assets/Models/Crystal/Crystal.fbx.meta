@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 7f78f04c25ec64bd1ae7feb33713bd14
+guid: ed4e3853586dc46b8bf684e3bfa97dbd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
     4300000: Circle

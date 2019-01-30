@@ -34,7 +34,6 @@ public class Movement : MonoBehaviour {
         if (Input.GetKey(KeyCode.LeftShift))
         {
             privateSpeed = sprintspeed;
-            print("sprinting");
         }
         else
         {
