@@ -12,7 +12,7 @@ public class PlayerControler : MonoBehaviour
     public GameObject camera;
     private GameObject buildObject;
     private static float speed;
-    private static float framedistance = 1;
+    private static float framedistance = 2;
     private static Quaternion buildObjectRotation;
 
     // Use this for initialization
@@ -58,11 +58,11 @@ public class PlayerControler : MonoBehaviour
         target = new Vector3(round(target.x/framedistance)*framedistance, round(target.y/ framedistance) * framedistance, round(target.z/ framedistance) * framedistance);
 
 
-        if (buildObject == null && Input.GetKeyDown("n"))
+        if (buildObject == null)
         {
             buildObject = (GameObject)Instantiate(test);
             buildObject.transform.position = target;
-            buildObject.transform.rotation = buildObjectRotation;
+            buildObject.transform.rotation = Quaternion.Euler(Random.Range(0,4) * 90f, Random.Range(0, 4) * 90f , Random.Range(0, 4) * 90f);
         }
 
         if (buildObject != null) { 
